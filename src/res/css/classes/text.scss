@@ -1,0 +1,34 @@
+.uppercase {
+    text-transform: uppercase;
+}
+
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.semi-bold {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.extra-bold {
+    font-weight: 800;
+}
+
+.text-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.text-line-overflow {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}

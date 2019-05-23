@@ -1,0 +1,19 @@
+@import "../variables/shape";
+
+@mixin responsive($medias...) {
+    @each $media in $medias {
+        @if $media == "smartphone" {
+            @media only screen and (max-width: $tablet - 1) {
+                @content
+            }
+        } @else if $media == "tablet" {
+            @media only screen and (min-width: $tablet) and (max-width: $small_laptop - 1) {
+                @content
+            }
+        } @else if $media == "desktop" {
+            @media only screen and (min-width: $small_laptop) and (max-width: $laptop - 1) {
+                @content
+            }
+        }
+    }
+}
