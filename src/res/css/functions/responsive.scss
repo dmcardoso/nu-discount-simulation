@@ -1,4 +1,6 @@
-@import "../variables/shape";
+$tablet: 768px;
+$small_laptop: 1024px;
+$laptop: 1200px;
 
 @mixin responsive($medias...) {
     @each $media in $medias {
@@ -17,3 +19,20 @@
         }
     }
 }
+
+//Usage:
+//@include responsive("tablet", "smartphone") {
+//    flex-direction: column-reverse;
+//}
+//
+//.content-left {
+//    background-color: #FAFAFA;
+//    width: 360px;
+//    margin-right: 80px;
+//    padding: 40px;
+//
+//    @include responsive("tablet", "smartphone") {
+//        width: 100%;
+//        margin: 0 0 40px 0;
+//    }
+//}

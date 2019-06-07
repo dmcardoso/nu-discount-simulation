@@ -1,0 +1,9 @@
+// Font-Size Base
+$fs_base: 16;
+
+@mixin font-size($size){
+    font-size: #{$size / $fs_base}rem;
+}
+
+//Usage
+//@include font-size(8);

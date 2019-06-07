@@ -1,9 +1,15 @@
-@import "../variables/shape";
-
 .container {
     max-width: $laptop;
     width: 100%;
     margin: 0 auto;
+
+    @include responsive($tablet) {
+        max-width: $tablet;
+    }
+
+    @include responsive($small_laptop) {
+        max-width: $small_laptop;
+    }
 }
 
 .full-w {

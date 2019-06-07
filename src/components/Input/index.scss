@@ -1,0 +1,10 @@
+@import "../../res/css/variables/colors";
+@import "../../res/css/variables/shape";
+
+.Input {
+    background-color: transparent;
+    border: 2px solid $second-white;
+    border-radius: $radius;
+    color: $second-white;
+    padding: 10px 20px;
+}
