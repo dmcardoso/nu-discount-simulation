@@ -1,0 +1,17 @@
+@mixin changeColor($primary, $secondary, $event: focus,$border: false, $border-size: 1, $border-style: solid, $transition: false) {
+    color: $secondary;
+    background-color: $primary;
+
+    &:#{$event} {
+        color: $primary;
+        background-color: $secondary;
+    }
+
+    @if ($border) {
+        border: #{$border-size}px #{$border-style} $primary;
+    }
+
+    @if ($transition) {
+        transition: #{$transition}s;
+    }
+}
