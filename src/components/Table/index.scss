@@ -1,0 +1,32 @@
+@import "../../res/css/variables/colors";
+@import "../../res/css/functions/responsive";
+
+.TableComponent {
+  .header {
+    color: $second-white;
+    margin-bottom: 10px;
+  }
+
+  .table {
+    @include responsive("smartphone") {
+      max-width: 100%;
+    }
+    .table-column {
+      margin-right: 50px;
+
+      .header-item {
+        color: $second-white;
+        margin-bottom: 10px;
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+
+      .body-item {
+        color: $second-white;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

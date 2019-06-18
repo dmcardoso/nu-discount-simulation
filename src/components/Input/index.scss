@@ -2,10 +2,23 @@
 @import "../../res/css/variables/shape";
 @import "../../res/css/functions/color";
 
-.Input {
+.InputComponent {
+
+  label {
+    color: $second-white;
+    margin-bottom: 5px;
+  }
+
+  .input {
     border-radius: $radius;
     padding: 10px 20px;
 
-    @include changeColor(black, white, focus,true, 2, solid, .3);
+    @include changeColor($white, $purple, focus, true, 2, solid, .2);
+    margin-bottom: 5px;
+
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+  }
 
 }

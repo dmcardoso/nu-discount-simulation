@@ -1,0 +1,9 @@
+@import "../../res/css/functions/responsive";
+
+.Form{
+  max-width: 100%;
+
+  @include responsive("smartphone") {
+    justify-content: center;
+  }
+}
